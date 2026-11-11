@@ -564,25 +564,32 @@ img {
   }
 
   } */
-
-.toggleIcon {
+.hamburger-icon {
   display: none;
-  cursor: pointer;
-  font-size: 30px;
-  color: #122c89;
 }
 
 .cross-icon {
   display: none;
 }
 
-.ul1.open li {
+.ul1.show li {
   display: block;
 }
 
 @media (max-width: 650px) {
-  .toggleIcon {
+  .hamburger-icon {
     display: block;
+    padding: 10px;
+    font-size: 30px;
+    color: #122c89;
+    cursor: pointer;
+  }
+
+  .cross-icon {
+    padding: 10px;
+    font-size: 30px;
+    color: #122c89;
+    cursor: pointer;
   }
 }
 
