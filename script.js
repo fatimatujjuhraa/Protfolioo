@@ -1,17 +1,16 @@
-var menu = document.querySelector(".ul1");
-var hamburger = document.querySelector(".hamburger-icon");
-var cross = document.querySelector(".cross-icon");
-var menuState = "closed";
+const menuToggle = document.querySelector(".toggleIcon");
+const navLinks = document.querySelector(".ul1");
+const hamburger = document.querySelector(".hamburger-icon");
+const cross = document.querySelector(".cross-icon");
 
-function toggleMenu() {
-    if (menuState === "closed") {
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
 
-        menu.classList.add("open");
-        hamburger.style.display = "none";
-        cross.style.display = "block";
-        menuState = "open";
-    } else if (menuState === "open") {
-
-        closeMenu();
-    } 
-}
+  if (navLinks.classList.contains("show")) {
+    hamburger.style.display = "none";
+    cross.style.display = "block";
+  } else {
+    hamburger.style.display = "block";
+    cross.style.display = "none";
+  }
+});
