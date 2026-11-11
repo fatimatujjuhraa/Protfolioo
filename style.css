@@ -4,7 +4,8 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
- .body{ background-color: #f4f4f6;
+.body {
+  background-color: #f4f4f6;
   color: #091537;
 }
 
@@ -92,7 +93,7 @@ img {
     padding: 14px 20px;
   }
 }
-
+/* 
 .hamburger-icon {
   display: none;
 
@@ -105,7 +106,7 @@ img {
     font-size: 30px;
     color: #122c89;
   }
-}
+} */
 
 .btn-blue {
   background-color: rgb(44 131 216);
@@ -330,11 +331,12 @@ img {
 
 .member b {
   display: block;
- font-size: 20px;
+  font-size: 20px;
 }
 
 .member span {
-  display: block; font-size: 10px;
+  display: block;
+  font-size: 10px;
 }
 
 .trust {
@@ -542,23 +544,45 @@ img {
 .footer {
   background-color: #cde2f6;
   color: #091537;
-/* padding: 20px; */
+  /* padding: 20px; */
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
   gap: 1px;
-
+}
 @media (max-width: 650px) {
-   {
-    flex-wrap: wrap; font-size: 10;
+  .footer {
+    flex-wrap: wrap;
+    font-size: 10px;
   }
 }
+/* @media (max-width: 650px) 
+  {
+    .ul1:hover li {
+    display: block;
+  }
 
+  } */
+
+.toggleIcon {
+  display: none;
+  cursor: pointer;
+  font-size: 30px;
+  color: #122c89;
+}
+
+.cross-icon {
+  display: none;
+}
+
+.ul1.open li {
+  display: block;
 }
 
 @media (max-width: 650px) {
-  .ul1:hover li {
+  .toggleIcon {
     display: block;
   }
 }
+
