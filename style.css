@@ -53,7 +53,7 @@ img {
   height: 70px;
 
   @media (max-width: 650px) {
-    height: 50px;
+    height: 60px;
   }
 }
 
@@ -74,6 +74,7 @@ img {
     width: 100%;
     flex-direction: column;
     gap: 0;
+    transition: max-height 0.4s ease;
   }
 }
 
@@ -442,7 +443,6 @@ img {
   color: #76c0ec;
   font-size: 32px;
   margin-bottom: 12px;
- 
 
   @media (max-width: 650px) {
     font-size: 26px;
@@ -603,5 +603,3 @@ img {
     display: block;
   }
 }
-
-
